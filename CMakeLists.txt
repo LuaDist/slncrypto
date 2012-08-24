@@ -7,6 +7,6 @@
 project ( slncrypto C )
 cmake_minimum_required ( VERSION 2.6 )
 include ( cmake/dist.cmake )
-
+include ( lua )
 install_lua_module ( crypto slncrypt.c crypto.def )
 install_test ( cryptest )
