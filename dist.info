@@ -7,6 +7,7 @@ desc = "A cryptography support library for Lua, developed for the Selene databas
 url = "http://luaforge.net/projects/sln/"
 license = "MIT/X11"
 maintainer = "Peter Drahoš"
+author = "Malete Partner"
 
 depends = {
 	"lua ~> 5.1"

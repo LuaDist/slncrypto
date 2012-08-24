@@ -4,13 +4,9 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(slncrypto C)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( slncrypto C )
+cmake_minimum_required ( VERSION 2.6 )
+include ( cmake/dist.cmake )
 
-# Build
-ADD_LUA_MODULE(crypto slncrypt.c crypto.def)
-
-# Install all files and documentation
-INSTALL (TARGETS crypto DESTINATION ${INSTALL_CMOD})
-INSTALL (FILES cryptest DESTINATION ${INSTALL_DATA})
+install_lua_module ( crypto slncrypt.c crypto.def )
+install_test ( cryptest )
